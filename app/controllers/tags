@@ -1,0 +1,10 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+create	/Users/ivanran1/Desktop/ca_workbook/Ruby/rails/3_10_18/movie_directory_app/app/controllers/movies_controller.rb	/^  def create$/;"	f	language:Ruby	class:MoviesController
+destroy	/Users/ivanran1/Desktop/ca_workbook/Ruby/rails/3_10_18/movie_directory_app/app/controllers/movies_controller.rb	/^  def destroy$/;"	f	language:Ruby	class:MoviesController
+edit	/Users/ivanran1/Desktop/ca_workbook/Ruby/rails/3_10_18/movie_directory_app/app/controllers/movies_controller.rb	/^  def edit$/;"	f	language:Ruby	class:MoviesController
+index	/Users/ivanran1/Desktop/ca_workbook/Ruby/rails/3_10_18/movie_directory_app/app/controllers/movies_controller.rb	/^  def index$/;"	f	language:Ruby	class:MoviesController
+MoviesController	/Users/ivanran1/Desktop/ca_workbook/Ruby/rails/3_10_18/movie_directory_app/app/controllers/movies_controller.rb	/^class MoviesController < ApplicationController$/;"	c	language:Ruby
+movie_params	/Users/ivanran1/Desktop/ca_workbook/Ruby/rails/3_10_18/movie_directory_app/app/controllers/movies_controller.rb	/^  def movie_params$/;"	f	language:Ruby	class:MoviesController
+new	/Users/ivanran1/Desktop/ca_workbook/Ruby/rails/3_10_18/movie_directory_app/app/controllers/movies_controller.rb	/^  def new$/;"	f	language:Ruby	class:MoviesController
+show	/Users/ivanran1/Desktop/ca_workbook/Ruby/rails/3_10_18/movie_directory_app/app/controllers/movies_controller.rb	/^  def show$/;"	f	language:Ruby	class:MoviesController
+update	/Users/ivanran1/Desktop/ca_workbook/Ruby/rails/3_10_18/movie_directory_app/app/controllers/movies_controller.rb	/^  def update$/;"	f	language:Ruby	class:MoviesController

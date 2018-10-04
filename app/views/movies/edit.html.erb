@@ -1,5 +1,18 @@
 <h1>Edit movie</h1>
 <%= form_with model: @movie, local:true do |form|%>
+<% if @movie.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@movie.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @movie.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>	
+      </ul>
+    </div>
+		  <% end %>
 <p>
 	<%=form.label :title%>
 	<%=form.text_field :title%>
@@ -17,8 +30,8 @@
 	<%=form.text_field :runtime, type:'number'%>
 	</p>
 		<p>
-	<%=movie.label :img%>
-	<%=movie.text_field :img%>
+	<%=form.label :img%>
+	<%=form.text_field :img%>
 	</p>
 	<%=form.submit%>	
 

@@ -14,6 +14,12 @@ class MoviesController < ApplicationController
     else
       render "new"
     end
+    # another way:
+    # if @movie.valid?
+    #   render json: @movie
+    # else
+    #   render "isnt valid"
+    # end
   end
 
   def new

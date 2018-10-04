@@ -1,3 +1,5 @@
 <%=@movie.inspect%>
-
+<%= image_tag(@movie.img) %>
+<%# same: %>
+<%# <img src="<%= @movie.img"/> %>
 <%= link_to "Movies", movies_path %>

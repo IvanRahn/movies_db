@@ -1,5 +1,17 @@
-<%=@movie.inspect%>
-<%= image_tag(@movie.img) %>
+<div class="container" style="width: 30rem">
+<%=render "card", movie: @movie%>
+<%#<h5><%=@movie.title %>
+<%#<%= image_tag @movie.img, class:"card-img-top " %>
 <%# same: %>
 <%# <img src="<%= @movie.img"/> %>
+<%= render "reviews/form", review: @review, movie: @movie%>
+
+<% @reviews.each do |review|%>
+<%=review.inspect%>
+<%= link_to "Delete", movie_review_path(@movie, review),
+method: :delete, 
+data: {confirm: "Are you sure?"}%>
+<%end%>
+
 <%= link_to "Movies", movies_path %>
+</div>

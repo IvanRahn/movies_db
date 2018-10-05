@@ -1,3 +1,4 @@
+
 class MoviesController < ApplicationController
   def index
     @movies = Movie.all
@@ -12,6 +13,9 @@ class MoviesController < ApplicationController
 
   def create
     @movie = Movie.new(movie_params)
+    @movie.img = ImdbService.get_image_by_title(@movie.title)
+    @movie.overview = ImdbService.get_overview_by_title(@movie.title)
+    @movie.release_date = ImdbService.get_release_date_by_title(@movie.title) 
     if @movie.save
       redirect_to @movie
     else

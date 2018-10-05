@@ -7,9 +7,15 @@
 		<li class="list-group-item">Genre: <%= movie.genre %></li>
 	<li class="list-group-item">Runtime: <%= movie.runtime %> min</li>	
 	<li class="list-group-item">Release date: <%= movie.release_date%></li>	
+	<% if overview%>
+		<li class="list-group-item">Overview <%= movie.overview%></li>	
+<%end%>
+
 		</ul>
 		<div class="container d-flex justify-content-around">
+		<% if show%>
 		<%= link_to 'Show', movie_path(movie), class: "btn btn-primary"%>
+		<%end%>
 		<%= link_to "Edit", edit_movie_path(movie), class: "btn btn-primary"%>
 		<%= link_to "Delete", movie_path(movie), class:"btn btn-danger",
 		method: :delete,
